@@ -4,9 +4,9 @@ namespace RCR.Business.Models
 {
     public class Fornecedor : Entity 
     {
-        public string Nome { get; set; }
+        public string? Nome { get; set; }
 
-        public string Documento { get; set; }
+        public string? Documento { get; set; }
 
         public TipoFornecedor TipoFornecedor { get; set; }
 
@@ -15,6 +15,6 @@ namespace RCR.Business.Models
         public bool Ativo { get; set; }
 
         /* EF Relations */
-        public IEnumerable<Produto> Produtos { get; set; }
+        public IEnumerable<Produto>? Produtos { get; set; }
     }
 }
