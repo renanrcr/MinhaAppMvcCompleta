@@ -4,7 +4,7 @@ using RCR.Business.Models;
 
 namespace RCR.Data.Mappings
 {
-    internal class FornecedorMapping : IEntityTypeConfiguration<Fornecedor>
+    public class FornecedorMapping : IEntityTypeConfiguration<Fornecedor>
     {
         public void Configure(EntityTypeBuilder<Fornecedor> builder)
         {

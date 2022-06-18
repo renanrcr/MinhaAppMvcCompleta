@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using RCR.App.ViewModels;
 
 namespace RCR.App.Data
 {
@@ -9,5 +10,6 @@ namespace RCR.App.Data
             : base(options)
         {
         }
+        public DbSet<RCR.App.ViewModels.ProdutosViewModel>? ProdutosViewModel { get; set; }
     }
 }

@@ -4,7 +4,7 @@ using RCR.Business.Models;
 
 namespace RCR.Data.Mappings
 {
-    internal class EnderecoMapping : IEntityTypeConfiguration<Endereco>
+    public class EnderecoMapping : IEntityTypeConfiguration<Endereco>
     {
         public void Configure(EntityTypeBuilder<Endereco> builder)
         {
